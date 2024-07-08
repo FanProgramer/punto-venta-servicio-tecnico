@@ -31,7 +31,7 @@ numpy
 openpyxl==3.1.4
 packaging==24.0
 panda==0.3.1
-pandas==2.2.2
+pandas
 pdfkit==1.0.0
 pefile==2023.2.7
 pillow==10.3.0
