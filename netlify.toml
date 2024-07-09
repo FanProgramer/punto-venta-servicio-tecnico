@@ -1,0 +1,5 @@
+[build]
+command = "python manage.py collectstatic --noinput"
+
+[[plugins]]
+package = "@netlify/plugin-python"
