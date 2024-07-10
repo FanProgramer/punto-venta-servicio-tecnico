@@ -1,6 +1,6 @@
 [build]
   command = "gunicorn -b 0.0.0.0:$PORT server:application"
-  publish = "/path/to/your/static/files
+  publish = "/path/to/your/static/files"
 
 [context.production.environment]
   PYTHON_VERSION = "3.8"
