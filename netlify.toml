@@ -1,5 +1,5 @@
 [build]
-  command = "gunicorn -b 0.0.0.0:$PORT server:application"
+  command = "python -m gunicorn -b 0.0.0.0:$PORT app:app"
   publish = "your_flask_app"
 
 [context.production.environment]
