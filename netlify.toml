@@ -1,9 +1,6 @@
 [build]
-  command = "gunicorn -b :$PORT app:app"
+  command = "gunicorn -b :5000 app:app"
   publish = "templates"
-
-[dev]
-  command = "python3.8 app.py"  # Comando para desarrollo local, si lo usas
 
 [context.production.environment]
   PYTHON_VERSION = "3.8"
