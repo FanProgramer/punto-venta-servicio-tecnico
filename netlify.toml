@@ -1,6 +1,10 @@
 [build]
-  command = "gunicorn -b :5000 app:app"
-  publish = "your_flask_app"
+  command = "python3.8 app.py"  # Comando para iniciar tu aplicación Flask
+  functions = "netlify/functions"  # Si tienes funciones serverless
+  publish = "templates"  # Directorio de archivos HTML estáticos a desplegar
+
+[dev]
+  command = "python3.8 app.py"  # Comando para desarrollo local, si lo usas
 
 [context.production.environment]
   PYTHON_VERSION = "3.8"
