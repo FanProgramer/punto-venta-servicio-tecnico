@@ -1,6 +1,6 @@
 [build]
-  command = "pip install -r requirements.txt && flask run"
-  publish = "public"
+  command = "python app.py"
+ publish = "path_to_your_flask_app_folder"
 
 [context.production.environment]
   PYTHON_VERSION = "3.8"

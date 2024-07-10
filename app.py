@@ -18,6 +18,8 @@ from reportlab.platypus import SimpleDocTemplate, Table, TableStyle, Paragraph
 from reportlab.lib.styles import getSampleStyleSheet
 
 
+
+
 app = Flask(__name__)
 app.secret_key = 'Fanfanfan'  # Clave secreta estática
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///punto_venta.db'  # Ruta a tu base de datos SQLite
