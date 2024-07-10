@@ -1,6 +1,6 @@
 [build]
   command = "gunicorn -b 0.0.0.0:$PORT server:application"
-  publish = "C:\users\Fabian.Seleme\OneDrive - Toyota Argentina S.A\Escritorio\Punto de venta serivicio tecnico(HOYHOY)"
+  publish = "your_flask_app"
 
 [context.production.environment]
   PYTHON_VERSION = "3.8"
